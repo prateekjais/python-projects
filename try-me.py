@@ -1,5 +1,5 @@
 # trying something for the git
-firstVar = 10
+firstVar = 12
 
 while (firstVar > 1) :
     print(firstVar)
