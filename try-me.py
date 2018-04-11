@@ -1,6 +1,6 @@
 # trying something for the git
-firstVar = 12
+def firstfunc() :
+    print("my name")
 
-while (firstVar > 1) :
-    print(firstVar)
-    firstVar-= 1
+firstfunc()
+
