@@ -8,11 +8,11 @@
 import scrapy
 
 
-class IplscrapeItem(scrapy.Item):
+class GiveindiaItem(scrapy.Item):
     # define the fields for your item here like:
-    match_date = scrapy.Field()
-    match_name = scrapy.Field()
-    match_venue = scrapy.Field()
-    match_time = scrapy.Field()
-    match_result = scrapy.Field()
+    ngo_name = scrapy.Field()
+    ngo_url = scrapy.Field()
+    ngo_cause = scrapy.Field()
+    ngo_city = scrapy.Field()
+    ngo_state = scrapy.Field()
     

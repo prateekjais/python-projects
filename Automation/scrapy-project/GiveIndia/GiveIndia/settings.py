@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for iplscrape project
+# Scrapy settings for GiveIndia project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'iplscrape'
+BOT_NAME = 'GiveIndia'
 
-SPIDER_MODULES = ['iplscrape.spiders']
-NEWSPIDER_MODULE = 'iplscrape.spiders'
+SPIDER_MODULES = ['GiveIndia.spiders']
+NEWSPIDER_MODULE = 'GiveIndia.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'iplscrape (+http://www.yourdomain.com)'
+#USER_AGENT = 'GiveIndia (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'iplscrape.middlewares.IplscrapeSpiderMiddleware': 543,
+#    'GiveIndia.middlewares.GiveindiaSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'iplscrape.middlewares.IplscrapeDownloaderMiddleware': 543,
+#    'GiveIndia.middlewares.GiveindiaDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,8 +65,12 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'iplscrape.pipelines.IplscrapePipeline': 300,
+    'GiveIndia.pipelines.GiveindiaPipeline': 300,
 }
+MONGODB_SERVER = "localhost"
+MONGODB_PORT = 27017
+MONGODB_DB = "giveindiadb"
+MONGODB_COLLECTION = "ngocollection"
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
